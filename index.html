@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Librería Castro</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=DM+Sans:wght@400;500;700&family=Fredoka:wght@400;500&family=Nunito:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/img/logo-libreria-castro.svg">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- Icono de WhatsApp (se reutiliza en los botones) -->
+    <svg style="display:none" aria-hidden="true">
+      <symbol id="icono-wa" viewBox="0 0 24 24">
+        <path d="M12 2.5a9.5 9.5 0 0 0-8.1 14.4L2.5 21.5l4.7-1.3A9.5 9.5 0 1 0 12 2.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+        <path d="M8.7 8.2c-.3 2.6 3.6 6.5 6.6 6.8l1-1.6-1.9-1-.9.8c-.9-.4-1.9-1.4-2.3-2.3l.8-.9-1-1.9z" fill="currentColor"/>
+      </symbol>
+    </svg>
+
+    <!-- ENCABEZADO -->
+    <header class="cabecera">
+      <a class="cabecera-marca" href="#inicio" aria-label="Librería Castro, ir al inicio">
+        <img class="cabecera-logo" src="img/castro.jpg" alt="Librería Castro">
+      </a>
+
+      <nav class="cabecera-menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#libros">Libros</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <button id="boton-carrito" class="cabecera-carrito" type="button" aria-label="Abrir carrito">
+        <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+        Mi carrito <span id="contador-carrito">0</span>
+      </button>
+    </header>
+
+<main>
+    <!-- PORTADA -->
+    <section id="inicio" class="heroe">
+      <img class="heroe-logo" src="img/castro.jpg" alt="Librería Castro">
+      <h1 class="heroe-titulo">¡Útiles de calidad, siempre!</h1>
+      <p class="heroe-texto">
+        Te recibimos con cariño y una sonrisa sincera. Ven a recorrer nuestros
+        estantes: tu próxima aventura te está esperando aquíiii.
+      </p>
+    </section>
+
+    <!-- HORARIOS Y CONTACTO -->
+    <section id="horarios" class="seccion">
+      <h2 class="titulo-seccion">Horarios y atención</h2>
+      <div class="dos-columnas">
+        <div class="tarjeta-info">
+          <h3>Días y horarios</h3>
+          <!-- Cambia aquí tus horarios -->
+          <ul class="lista-horarios">
+            <li><span>Lunes a viernes</span><strong>8:30 - 12:30 y 14:30 - 19:00</strong></li>
+            <li><span>Sábados</span><strong>9:00 - 13:00</strong></li>
+            <li><span>Domingos</span><strong>Cerrado</strong></li>
+          </ul>
+        </div>
+        <div id="contacto" class="tarjeta-info tarjeta-contacto">
+          <h3>¿Tienes dudas o quieres hacer un pedido?</h3>
+          <p>Escríbenos y te respondemos lo más rápido posible.</p>
+          <a id="boton-contacto" class="boton boton-whatsapp" href="#" target="_blank" rel="noopener">
+            <svg class="icono"><use href="#icono-wa"/></svg> Escribir por WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section id="productos" class="seccion">
+      <h2 class="titulo-seccion">Nuestros productos</h2>
+      <input id="buscador" class="buscador" type="search" placeholder="Buscar productos..." aria-label="Buscar productos">
+      <div id="lista-productos" class="cuadricula"></div>
+      <p id="sin-resultados" class="sin-resultados" hidden>No encontramos productos con esa búsqueda. Prueba con otra palabra.</p>
+    </section>
+
+    <!-- LIBROS -->
+    <section id="libros" class="seccion">
+      <h2 class="titulo-seccion">Nuestros libros</h2>
+      <div id="lista-libros" class="cuadricula"></div>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section id="nosotros" class="seccion">
+      <h2 class="titulo-seccion">¿Por qué elegirnos?</h2>
+      <div class="cuadricula cuadricula-beneficios">
+        <article class="beneficio">
+          <span class="beneficio-icono">★</span>
+          <h3>Materiales de calidad</h3>
+          <p>Seleccionamos cada producto para que te dure todo el año. Estudia y crea con materiales en los que puedes confiar.</p>
+        </article>
+        <article class="beneficio">
+          <span class="beneficio-icono">♥</span>
+          <h3>Precios accesibles</h3>
+          <p>Todo lo que necesitas a un precio justo. Calidad que cuida tu bolsillo.</p>
+        </article>
+        <article class="beneficio">
+          <span class="beneficio-icono">✦</span>
+          <h3>Atención rápida y de calidad</h3>
+          <p>Te atendemos con cariño y sin esperas. Pides, coordinamos y listo.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- INVITACIÓN -->
+    <section class="invitacion">
+      <h2>Haz tus compras en Librería Castro</h2>
+      <p>Todo para tu estudio, tu trabajo y tus ideas en un solo lugar.</p>
+      <a class="boton boton-blanco boton-grande" href="#productos">Empezar a comprar</a>
+    </section>
+</main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="pie">
+    <div class="pie-contenido">
+
+      <div class="pie-informacion">
+        <p class="pie-marca">Librería Castro</p>
+        <p>
+          Libros, útiles escolares y artículos de papelería
+          para acompañarte en cada aprendizaje.
+        </p>
+      </div>
+
+      <div class="pie-contacto">
+        <h3>Contacto</h3>
+        <p>
+          <i class="fa-solid fa-phone" aria-hidden="true"></i>
+          <a href="https://wa.me/59169621569" target="_blank" rel="noopener noreferrer">69621569</a>
+        </p>
+        <p>
+          <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+          Bolivia
+        </p>
+        <p>
+          <i class="fa-solid fa-map" aria-hidden="true"></i>
+          Departamento: Potosí
+        </p>
+      </div>
+
+      <div class="pie-enlaces">
+        <h3>Información</h3>
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#libros">Libros</a>
+        <a href="#contacto">Contáctanos</a>
+      </div>
+
+    </div>
+
+    <div class="pie-inferior">
+      <p>© <span id="anio"></span> Librería Castro. Todos los derechos reservados.</p>
+      <p>Gracias por apoyar nuestro negocio.</p>
+    </div>
+  </footer>
+
+  <!-- CARRITO (se desliza desde la derecha) -->
+  <div id="fondo-oscuro" class="fondo-oscuro" hidden></div>
+  <aside id="carrito" class="carrito" aria-label="Carrito de compras">
+    <div class="carrito-cabecera">
+      <h2>Tu carrito</h2>
+      <button id="cerrar-carrito" class="boton-cerrar" type="button" aria-label="Cerrar carrito">×</button>
+    </div>
+    <div id="carrito-articulos" class="carrito-articulos"></div>
+    <div class="carrito-pie">
+      <p class="carrito-total">Total: <strong id="carrito-total">0.00</strong></p>
+      <button id="boton-pedir" class="boton boton-whatsapp boton-completo" type="button">
+        <svg class="icono"><use href="#icono-wa"/></svg> Realizar pedido por WhatsApp
+      </button>
+    </div>
+  </aside>
+
+  <!-- FORMULARIO DEL PEDIDO -->
+  <div id="ventana-pedido" class="ventana" hidden>
+    <form id="formulario-pedido" class="formulario" novalidate>
+      <div class="carrito-cabecera">
+        <h2>Datos de tu pedido</h2>
+        <button id="cerrar-formulario" class="boton-cerrar" type="button" aria-label="Cerrar formulario">×</button>
+      </div>
+      <label for="campo-nombre">Tu nombre</label>
+      <input id="campo-nombre" type="text" placeholder="Ejemplo: María Pérez" autocomplete="name">
+      <label for="campo-celular">Tu celular</label>
+      <input id="campo-celular" type="tel" placeholder="Ejemplo: 70000000" autocomplete="tel">
+      <label for="campo-notas">Detalles del pedido (opcional)</label>
+      <textarea id="campo-notas" rows="4" placeholder="Horario de entrega, color, tamaño, forma de entrega u otra indicación"></textarea>
+      <p id="mensaje-error" class="mensaje-error" hidden></p>
+      <button class="boton boton-whatsapp boton-completo" type="submit">
+        <svg class="icono"><use href="#icono-wa"/></svg> Realizar pedido
+      </button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
