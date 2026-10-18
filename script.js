@@ -16,10 +16,15 @@ const CONFIGURACION = {
    - precio: solo el número, sin símbolo
    ===================================================== */
 const productos = [
-  { nombre: "Cuaderno", 
-    descripcion: "Tamaño carta, 100 hojas, tapa dura.", 
+  { nombre: "Cuaderno tamaño oficio", 
+    descripcion: "Cuaderno de 100 hojas, tapa dura, anillado y diferentes cuadriculas.", 
     precio: 20, 
     imagen: "productos/cuadernos.jpg" },
+
+  { nombre: "Cuaderno tamaño carta", 
+    descripcion: "Cuaderno de 100 hojas, tapa dura, anillado y diferentes cuadriculas.", 
+    precio: 20, 
+    imagen: "productos/cuaderno-oficio.jpg" },
 
   { nombre: "Boligrafos Pilot", 
     descripcion: "Lo mejor para escribir con suavidad y precisión.", 
@@ -30,6 +35,21 @@ const productos = [
     descripcion: "Los mejores bolígrafos para escribir con suavidad y precisión.", 
     precio: 2.50, 
     imagen: "productos/bolis1.jpg" },
+
+  { nombre: "Hojas de carpeta", 
+    descripcion: "Tenemos en todas las cuadriculas: menudo, intermedio y grande", 
+    precio: 40, 
+    imagen: "productos/hojas-carpeta.jpg" },
+
+  { nombre: "Lapiz rojo (Faber Castell)", 
+    descripcion: "Tenemos para vender por unidad y paquetes", 
+    precio: 3, 
+    imagen: "productos/lapiz-rojo.jpg" },
+
+  { nombre: "Lapiz negro", 
+    descripcion: "Tenemos para vender por unidad y paquetes", 
+    precio: 3, 
+    imagen: "productos/lapiz-negro.jpg" },
 
   { nombre: "Cartulinas", 
     descripcion: "Se tiene de todo los colores.", 
@@ -60,11 +80,35 @@ const libros = [
     precio: 10, 
     imagen: "libro/campeon.webp" },
 
+  { nombre: "¿Quien se ha llevado mi queso?", 
+    autor: "Spencer Johnson", 
+    descripcion: "Una fábula sencilla sobre el cambio: dos ratones y dos personitas buscan queso en un laberinto", 
+    precio: 10, 
+    imagen: "libro/queso.jpg" },
+
+  { nombre: "El velero de cristal", 
+    autor: "Jose Mauro de Vasconcelos", 
+    descripcion: "Es una novela breve y tierna sobre un niño que, a través de la imaginación, emprende un viaje al país de los sueños.", 
+    precio: 10, 
+    imagen: "libro/velero.jpg" },
+
+  { nombre: "Quiubole", 
+    autor: "Gaby Vargas & Yordi Rosado", 
+    descripcion: "Es una guía para adolescentes que responde, con lenguaje juvenil y divertido, las dudas más comunes de esa etapa.", 
+    precio: 10, 
+    imagen: "libro/quiubole.jpg" },    
+
   { nombre: "La Chaskañawi", 
     autor: "Carlos Medinaceli", 
     descripcion: "Es una novela boliviana que cuenta una historia de amor entre un joven estudiante y una cholita", 
     precio: 10, 
-    imagen: "libro/chasca.jpg" }
+    imagen: "libro/chasca.jpg" },
+
+    { nombre: "Borracho estaba, pero no me acuerdo", 
+    autor: "Victor Hugo Viscarra", 
+    descripcion: "Es un libro de memorias de Viscarra, escritor paceño (1958-2006). Mezcla crónica, cuento, descripción antropológica y anécdota.", 
+    precio: 10, 
+    imagen: "libro/borracho.jpg" }
 ];
 
 /* =====================================================
