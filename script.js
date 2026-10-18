@@ -3,7 +3,7 @@
    ===================================================== */
 const CONFIGURACION = {
   // Número de WhatsApp con código de país y sin signos ni espacios. Ejemplo: "59170000000"
-  whatsapp: "59169621569",
+  whatsapp: "59172379293",
   moneda: "Bs",
   tienda: "Librería Castro"
 };
@@ -51,6 +51,13 @@ const productos = [
     precio: 3, 
     imagen: "productos/lapiz-negro.jpg" },
 
+  { nombre: "Lapiz negro", 
+    descripcion: "Tenemos para vender por unidad y paquetes", 
+    precio: 3, 
+    imagen: "productos/lapiz-negro.jpg" },
+
+    
+
   { nombre: "Cartulinas", 
     descripcion: "Se tiene de todo los colores.", 
     precio: 4, 
@@ -65,7 +72,7 @@ const libros = [
   { nombre: "Cara sucia", 
     autor: "José Camarlinghi", 
     descripcion: "Es una obra de la literatura boliviana que refleja la vida difícil de los niños de la calle", 
-    precio: 10, 
+    precio: 100, 
     imagen: "libro/cara.jpg" },
 
   { nombre: "Tempestad en la cordillera", 
